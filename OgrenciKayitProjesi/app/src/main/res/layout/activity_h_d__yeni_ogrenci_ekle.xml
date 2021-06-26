@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HD_YeniOgrenciEkle">
+
+    <TextView
+        android:id="@+id/hd_txt_sayfa2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="42dp"
+        android:layout_marginEnd="27dp"
+        android:layout_marginBottom="13dp"
+        android:text="ÖĞRENCİ KAYIT SAYFASI"
+        android:textColor="#000"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/hd_etxt_ogrNoo2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/hd_btn_don"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/hd_etxt_ogrNoo2"
+        android:layout_width="228dp"
+        android:layout_height="39dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginBottom="2dp"
+        android:ems="10"
+        android:hint="Öğrenci Numaranızı Giriniz"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/hd_etxt_ogrAdi2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/hd_txt_ogrNoo2"
+        app:layout_constraintTop_toBottomOf="@+id/hd_txt_sayfa2" />
+
+    <TextView
+        android:id="@+id/hd_txt_ogrAdi2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="91dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginBottom="14dp"
+        android:text="Öğrenci Adı:"
+        android:textColor="#000"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/hd_txt_ogrSoyadi2"
+        app:layout_constraintEnd_toStartOf="@+id/hd_etxt_ogrAdi2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hd_txt_ogrNoo2" />
+
+    <TextView
+        android:id="@+id/hd_txt_ogrNoo2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="97dp"
+        android:layout_marginBottom="17dp"
+        android:text="Öğrenci No:"
+        android:textColor="#000"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/hd_txt_ogrAdi2"
+        app:layout_constraintEnd_toStartOf="@+id/hd_etxt_ogrNoo2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hd_btn_don" />
+
+    <TextView
+        android:id="@+id/hd_txt_ogrSoyadi2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="71dp"
+        android:layout_marginBottom="20dp"
+        android:text="Öğrenci Soyadı:"
+        android:textAlignment="viewStart"
+        android:textColor="#000"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/hd_txt_sifree2"
+        app:layout_constraintEnd_toStartOf="@+id/hd_etxt_ogrSoyadi2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hd_txt_ogrAdi2" />
+
+    <EditText
+        android:id="@+id/hd_etxt_ogrSoyadi2"
+        android:layout_width="229dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="158dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginBottom="380dp"
+        android:ems="10"
+        android:hint="Soyadınızı Giriniz"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/hd_checkBox_sozlesme2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/hd_txt_ogrSoyadi2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/hd_etxt_ogrAdi2"
+        android:layout_width="229dp"
+        android:layout_height="46dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginBottom="76dp"
+        android:ems="10"
+        android:hint="Adınızı Giriniz"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#000"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/hd_etxt_telefon3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/hd_txt_ogrAdi2"
+        app:layout_constraintTop_toBottomOf="@+id/hd_etxt_ogrNoo2" />
+
+    <EditText
+        android:id="@+id/hd_etxt_ePosta2"
+        android:layout_width="232dp"
+        android:layout_height="42dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:hint="E-posta Adresinizi Giriniz"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/hd_txt_ePosta2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/hd_txt_adres2"
+        app:layout_constraintTop_toBottomOf="@+id/hd_txt_ePosta2" />
+
+    <EditText
+        android:id="@+id/hd_etxt_telefon3"
+        android:layout_width="228dp"
+        android:layout_height="45dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginBottom="38dp"
+        android:ems="10"
+        android:hint="Telefon Numaranızı Giriniz"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/hd_etxt_adres2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/hd_txt_telefon3"
+        app:layout_constraintTop_toBottomOf="@+id/hd_etxt_ogrAdi2" />
+
+    <EditText
+        android:id="@+id/hd_etxt_adres2"
+        android:layout_width="230dp"
+        android:layout_height="43dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="37dp"
+        android:ems="10"
+        android:hint="Adresinizi Giriniz"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/hd_spinner_bolum2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/hd_txt_adres2"
+        app:layout_constraintTop_toBottomOf="@+id/hd_etxt_telefon3" />
+
+    <TextView
+        android:id="@+id/hd_txt_cinsiyet2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="120dp"
+        android:layout_marginBottom="18dp"
+        android:text="Cinsiyet"
+        android:textColor="#000"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/hd_txt_bolum2"
+        app:layout_constraintEnd_toStartOf="@+id/hd_radioGroup_cinsiyet"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hd_txt_adres2" />
+
+    <RadioGroup
+        android:id="@+id/hd_radioGroup_cinsiyet"
+        android:layout_width="233dp"
+        android:layout_height="38dp"
+        android:layout_marginEnd="10dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="@+id/hd_txt_cinsiyet2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/hd_txt_cinsiyet2"
+        app:layout_constraintTop_toBottomOf="@+id/hd_txt_cinsiyet2">
+
+        <RadioButton
+            android:id="@+id/hd_radiobtn_bayan"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Bayan"
+            android:textColor="#000"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/hd_radiobtn_bay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bay"
+            android:textColor="#000"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/hd_txt_adres2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="130dp"
+        android:layout_marginBottom="18dp"
+        android:text="Adres:"
+        android:textColor="#000"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/hd_txt_cinsiyet2"
+        app:layout_constraintEnd_toStartOf="@+id/hd_etxt_adres2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hd_txt_ePosta2" />
+
+    <TextView
+        android:id="@+id/hd_txt_ePosta2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="17dp"
+        android:text="E-posta:"
+        android:textColor="#000"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/hd_txt_adres2"
+        app:layout_constraintEnd_toStartOf="@+id/hd_etxt_ePosta2"
+        app:layout_constraintTop_toBottomOf="@+id/hd_txt_telefon3" />
+
+    <TextView
+        android:id="@+id/hd_txt_telefon3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="84dp"
+        android:layout_marginBottom="20dp"
+        android:text="Cep Telefonu:"
+        android:textColor="#000"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/hd_txt_ePosta2"
+        app:layout_constraintEnd_toStartOf="@+id/hd_etxt_telefon3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hd_txt_sifree2" />
+
+    <Spinner
+        android:id="@+id/hd_spinner_hazirlik2"
+        android:layout_width="201dp"
+        android:layout_height="34dp"
+        android:layout_marginEnd="8dp"
+        android:entries="@array/secim"
+        app:layout_constraintBottom_toBottomOf="@+id/hd_txt_hazirlik2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/hd_txt_hazirlik2"
+        app:layout_constraintTop_toBottomOf="@+id/hd_txt_hazirlik2" />
+
+    <TextView
+        android:id="@+id/hd_txt_bolum2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="77dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="12dp"
+        android:text="Bölüm Seçiniz:"
+        android:textColor="#000"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/hd_txt_hazirlik2"
+        app:layout_constraintEnd_toStartOf="@+id/hd_spinner_bolum2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hd_txt_cinsiyet2" />
+
+    <Button
+        android:id="@+id/hd_btn_kayitOlll2"
+        android:layout_width="142dp"
+        android:layout_height="35dp"
+        android:text="KAYIT ET"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.772"
+        app:layout_constraintStart_toEndOf="@+id/hd_image_ogrenci2"
+        tools:layout_editor_absoluteY="664dp" />
+
+    <TextView
+        android:id="@+id/hd_txt_hobiler2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="122dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="36dp"
+        android:text="Hobiler:"
+        android:textColor="#000"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/hd_image_ogrenci2"
+        app:layout_constraintEnd_toStartOf="@+id/hd_checkBox_muzik2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hd_txt_hazirlik2" />
+
+    <CheckBox
+        android:id="@+id/hd_checkBox_sozlesme2"
+        android:layout_width="256dp"
+        android:layout_height="32dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginBottom="123dp"
+        android:text="Sözleşmeyi Kabul Ediyor Musunuz?"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/hd_image_ogrenci2"
+        app:layout_constraintTop_toBottomOf="@+id/hd_etxt_ogrSoyadi2" />
+
+    <CheckBox
+        android:id="@+id/hd_checkBox_spor2"
+        android:layout_width="120dp"
+        android:layout_height="35dp"
+        android:text="Spor Yapmak"
+        app:layout_constraintBottom_toTopOf="@+id/hd_checkBox_sozlesme2"
+        app:layout_constraintEnd_toEndOf="@+id/hd_checkBox_kitap2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/hd_checkBox_kitap2"
+        app:layout_constraintTop_toBottomOf="@+id/hd_checkBox_kitap2" />
+
+    <CheckBox
+        android:id="@+id/hd_checkBox_bildirim2"
+        android:layout_width="219dp"
+        android:layout_height="37dp"
+        android:layout_marginBottom="86dp"
+        android:text="Bildirim Almak İster Misiniz?"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/hd_checkBox_sozlesme2"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/hd_checkBox_sozlesme2"
+        app:layout_constraintTop_toBottomOf="@+id/hd_checkBox_sozlesme2"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/hd_txt_hazirlik2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="24dp"
+        android:text="Hazırlık Okumak İster Misiniz?"
+        android:textColor="#000"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/hd_txt_hobiler2"
+        app:layout_constraintEnd_toStartOf="@+id/hd_spinner_hazirlik2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hd_txt_bolum2" />
+
+    <CheckBox
+        android:id="@+id/hd_checkBox_muzik2"
+        android:layout_width="178dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginBottom="30dp"
+        android:text="Müzik Dinlemek"
+        app:layout_constraintBottom_toBottomOf="@+id/hd_checkBox_kitap2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/hd_txt_hobiler2"
+        app:layout_constraintTop_toTopOf="@+id/hd_spinner_hazirlik2" />
+
+    <CheckBox
+        android:id="@+id/hd_checkBox_kitap2"
+        android:layout_width="157dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="32dp"
+        android:text="Kitap Okumak"
+        app:layout_constraintBottom_toTopOf="@+id/hd_checkBox_spor2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hd_txt_hazirlik2" />
+
+    <ImageView
+        android:id="@+id/hd_image_ogrenci2"
+        android:layout_width="120dp"
+        android:layout_height="151dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginBottom="43dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hd_txt_hobiler2"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <Spinner
+        android:id="@+id/hd_spinner_bolum2"
+        android:layout_width="222dp"
+        android:layout_height="37dp"
+        android:layout_marginEnd="10dp"
+        android:entries="@array/bolum"
+        app:layout_constraintBottom_toTopOf="@+id/hd_txt_hazirlik2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/hd_txt_bolum2"
+        app:layout_constraintTop_toBottomOf="@+id/hd_etxt_adres2" />
+
+    <TextView
+        android:id="@+id/hd_txt_sifree2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="83dp"
+        android:layout_marginBottom="26dp"
+        android:text="Doğum Tarihi:"
+        android:textColor="#000"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/hd_txt_telefon3"
+        app:layout_constraintEnd_toStartOf="@+id/hd_etxt_dogumTarihi2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hd_txt_ogrSoyadi2" />
+
+    <EditText
+        android:id="@+id/hd_etxt_dogumTarihi2"
+        android:layout_width="232dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:hint="Doğum Tarihinizi Giriniz"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/hd_txt_sifree2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/hd_txt_sifree2"
+        app:layout_constraintTop_toBottomOf="@+id/hd_txt_sifree2"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/hd_btn_don"
+        android:layout_width="126dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="42dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="14dp"
+        android:text="AnaSayfa"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toTopOf="@+id/hd_txt_ogrNoo2"
+        app:layout_constraintEnd_toStartOf="@+id/hd_txt_sayfa2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

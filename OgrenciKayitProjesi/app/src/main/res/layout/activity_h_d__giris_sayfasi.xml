@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HD_GirisSayfasi">
+
+    <Button
+        android:id="@+id/hd_btn_girisGirisyap"
+        android:layout_width="250dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="116dp"
+        android:onClick="hd_girisYap"
+        android:text="GİRİŞ YAP"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/hd_txt_kayit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hd_etxt_girisSifre" />
+
+    <Button
+        android:id="@+id/hd_btn_girisKayitol"
+        android:layout_width="250dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="72dp"
+        android:onClick="hd_kayitOl"
+        android:text="KAYIT OL"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hd_txt_kayit" />
+
+    <EditText
+        android:id="@+id/hd_etxt_girisEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:layout_marginBottom="14dp"
+        android:ems="10"
+        android:hint="E mail Giriniz"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/hd_etxt_girisSifre"
+        app:layout_constraintStart_toStartOf="@+id/hd_txt_giris"
+        app:layout_constraintTop_toBottomOf="@+id/hd_txt_giris" />
+
+    <EditText
+        android:id="@+id/hd_etxt_girisSifre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="9dp"
+        android:ems="10"
+        android:hint="Şifre Giriniz"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/hd_btn_girisGirisyap"
+        app:layout_constraintStart_toStartOf="@+id/hd_btn_girisGirisyap"
+        app:layout_constraintTop_toBottomOf="@+id/hd_etxt_girisEmail" />
+
+    <TextView
+        android:id="@+id/hd_txt_baslik"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="39dp"
+        android:layout_marginBottom="59dp"
+        android:text="ÖĞRENCİ KAYIT SİSTEMİ"
+        android:textColor="#3F51B5"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/hd_txt_giris"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/hd_txt_giris"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="13dp"
+        android:layout_marginBottom="9dp"
+        android:text="Giriş Yapmak İçin Tıklayınız"
+        android:textColor="#3F51B5"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/hd_etxt_girisEmail"
+        app:layout_constraintStart_toStartOf="@+id/hd_txt_baslik"
+        app:layout_constraintTop_toBottomOf="@+id/hd_txt_baslik" />
+
+    <TextView
+        android:id="@+id/hd_txt_kayit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="7dp"
+        android:text="Kayıt Olmak İçin Tıklayınız"
+        android:textColor="#3F51B5"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/hd_btn_girisKayitol"
+        app:layout_constraintEnd_toEndOf="@+id/hd_btn_girisKayitol"
+        app:layout_constraintTop_toBottomOf="@+id/hd_btn_girisGirisyap" />
+</androidx.constraintlayout.widget.ConstraintLayout>

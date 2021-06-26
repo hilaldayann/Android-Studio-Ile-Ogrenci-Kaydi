@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">OgrenciKayitProjesi</string>
+    <string-array name="bolum">
+        <item>Bilgisayar Mühendisliği</item>
+        <item>Makine Mühendisliği</item>
+        <item>Harita Mühendisliği</item>
+        <item>İnşaat Mühendisliği</item>
+        <item>Biyomühendislik</item>
+    </string-array>
+
+    <string-array name="secim">
+        <item>EVET</item>
+        <item>HAYIR</item>
+    </string-array>
+</resources>

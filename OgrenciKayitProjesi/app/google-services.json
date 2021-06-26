@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "546915259476",
+    "project_id": "ogrencikayitprojesi",
+    "storage_bucket": "ogrencikayitprojesi.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:546915259476:android:bc2b72650ea9440db5c9c1",
+        "android_client_info": {
+          "package_name": "com.gop.ogrencikayitprojesi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "546915259476-altacgppqr9jl6cgfpqt4vm2d0ndoonp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB5l_8NT-9djuwJEMd-Q0uEpOfCDwFjgVM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "546915259476-altacgppqr9jl6cgfpqt4vm2d0ndoonp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
